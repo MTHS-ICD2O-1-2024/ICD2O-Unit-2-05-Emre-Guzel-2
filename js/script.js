@@ -6,11 +6,15 @@
 
 "use strict"
 
-function calculatoinOfAreaOftriangle() {
+function CalucalteTaxIncome() {
   // Setting the varibles
-  const baseOfTheTriangle = parseFloat(document.getElementById("base-of-the-triangle").value)
-  const heightOfTheTriangle = parseFloat (document.getElementById("height-of-the-triangle").value)
-  const calculatoinOfAreaOftriangle = (baseOfTheTriangle * heightOfTheTriangle) / 2 
+  const TaxAmount = 0.18
+  let HourlyWorked = parseInt(document.getElementById("hourly-worked").value)
+  let HourlyWage = parseInt (document.getElementById("hourly-wage").value)
+  let grossPay= HourlyWorked * HourlyWage
+  let TakeHomePay = grossPay - TaxAmount 
+  
   // clacualtoins 
-  document.getElementById("area").innerHTML ="Area is: " + calculatoinOfAreaOftriangle + "cm²"
+  document.getElementById("result").innerHTML = 
+    `Take-home Pay: $${takeHomePay.toFixed(2)} | Taxes: $${taxAmount.toFixed(2)}`
 }
