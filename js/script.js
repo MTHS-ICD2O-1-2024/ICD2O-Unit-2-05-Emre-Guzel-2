@@ -2,9 +2,10 @@
 // Created by: Emre Guzel
 // Created on: March 24  2025
 // This file contains the JS functions for index.html
+
 "use strict"
 
-function calucalteTaxIncome() {
+function calculateTaxIncome() {
   // Setting the variables
   const taxAmount = 0.18;
   let hourlyWorked = parseFloat(document.getElementById("hourly-worked").value);
