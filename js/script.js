@@ -1,3 +1,7 @@
+// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Created by: Emre Guzel
+// Created on: March 24  2025
+// This file contains the JS functions for index.html
 "use strict"
 
 function calucalteTaxIncome() {
@@ -5,7 +9,7 @@ function calucalteTaxIncome() {
   const taxAmount = 0.18;
   let hourlyWorked = parseFloat(document.getElementById("hourly-worked").value);
   let hourlyWage = parseFloat(document.getElementById("hourly-wage").value);
-  let takeHomePay = (hourlyWorked * hourlyWage) *(1.00 - taxAmount)
+  let takeHomePay = (hourlyWorked * hourlyWage) * (1.00 - taxAmount)
   let taxes = (hourlyWorked * hourlyWage) * taxAmount;
 
   // Correct currency formatting
